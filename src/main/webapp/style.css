@@ -1,0 +1,183 @@
+:root {
+    --primary-border-radius: 10px;
+    --primary-text-color: #bac3cb;
+    --secondary-text-color: #a3abb1;
+    --dimmed-secondary-text-color: #a3abb1ab;
+    --error-color: #f54c45;
+    --primary-background-color: #0c1116;
+    --secondary-background-color: #161a23;
+    --tertiary-background-color: #202330;
+    --soft-borders-color: #1e232f;
+    --default-borders-radius: 10px;
+    --table-border-color: #2f394b;
+
+    background-color: var(--primary-background-color);
+}
+
+
+
+
+input {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    padding-left: 1%;
+    margin: 0;
+}
+
+input:invalid {
+    border: 2px dashed red;
+}
+
+input:valid {
+    border: 2px solid var(--tertiary-background-color);
+}
+
+body {
+    font-size: 14px;
+    font-family: monospace;
+
+}
+
+.box {
+    width: 50%;
+}
+
+#graph {
+    padding-top: 10%;
+}
+
+#header-plate {
+    font-family: fantasy;
+    padding: 1%;
+    font-size: 15px;
+    color: var(--primary-text-color);
+    background-color: var(--tertiary-background-color);
+    border-radius: var(--default-borders-radius);
+}
+
+.checkboxY {
+    display: flex;
+    align-items: center;
+}
+
+.checkboxY label {
+    width: 15px;
+    text-align: right;
+    margin-left: 5px;
+}
+
+.radioboxR {
+    display: flex;
+    align-items: center;
+}
+
+.radioboxR label {
+    width: 15px;
+    text-align: right;
+    margin-left: 5px;
+}
+
+.main-container {
+    display: flex;
+}
+
+
+button {
+    padding: 10px 45px;
+    font-size: 16px;
+    margin-top: 2%;
+    background-color: var(--tertiary-background-color);
+    color: var(--primary-text-color);
+    border-radius: var(--primary-border-radius);
+    border: 2px solid var(--soft-borders-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary-background-color);
+
+}
+
+button:disabled {
+    background-color: var(--primary-background-color);
+}
+
+
+#graphBlock {
+    align-items: center;
+    padding: 2%;
+
+}
+
+#input-row {
+    display: flex;
+    flex-direction: column;
+    justify-items: auto;
+    padding: 1%;
+    margin-top: 1%;
+    font-size: 16px;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
+    border-radius: var(--default-borders-radius);
+
+}
+
+#datetimelabel {
+    font-family: 'Courier New', Courier, monospace
+}
+
+#datetime {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#errorMessage {
+    visibility: visible;
+    color: var(--error-color);
+}
+
+
+.testing-times {
+    color: var(--dimmed-secondary-text-color);
+}
+
+#dataTable {
+    margin: 3%;
+    width: 90%;
+    max-width: 600px;
+    border-collapse: collapse;
+    border: 4px double var(--table-border-color);
+    overflow: hidden;
+}
+
+#dataTable th,
+#dataTable td {
+    padding: 8px 12px;
+    text-align: center;
+    border: 2px solid var(--table-border-color);
+    color: var(--secondary-text-color);
+}
+
+#dataTable th {
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+}
+
+
+#dataTable tr:nth-child(even) {
+    background-color: var(--tertiary-background-color);
+}
+
+#dataTable tr:nth-child(odd) {
+    background-color: var(--secondary-background-color);
+}
+
+#jxgbox {
+    width:600px; 
+    height:600px;
+    color: aliceblue;
+}
+
+#graphBlock:hover {
+    cursor: pointer;
+}
